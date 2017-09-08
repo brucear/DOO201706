@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <script>
+      function imprimir() {
+	var nombre = document.getElementById("campo-ejemploN").value;
+
+        var apellidoP = document.getElementById("campo-ejemploAP").value;
+
+	var apellidoM = document.getElementById("campo-ejemploAM").value;
+
+	document.getElementById("label-resultado").innerHTML = nombre + " " + apellidoP + " " + apellidoM;
+
+        // Código para manipular la información
+      }
+    </script>
+  </head>
+
+  <body style="background-color: green";>
+    <h1>Persona</h1>
+
+    <div>
+      <h2>Registro</h2>
+      <p>
+        <label>Nombre/Nombres: </label> <input type="text" id="campo-ejemploN" />
+      </p>
+	<p>
+        <label>Apellido Paterno: </label> <input type="text" id="campo-ejemploAP" />
+      </p>
+	<p>
+        <label>Apellido Materno: </label> <input type="text" id="campo-ejemploAM" />
+      </p>
+      <p>
+        <input type="submit" value="Send" onclick="imprimir()" />
+      </p>
+    </div>
+
+    <div>
+      <h2>Resultado</h2>
+      <p>
+        Nombre: <label id="label-resultado"></label>
+      </p>
+    </div>
+  </body>
+
+</html>
